@@ -36,4 +36,24 @@ const exemploFunction: (i: number) => void = (i) => {};
 const json = '{"x": 10, "y": 2}';
 const cordenadas = JSON.parse(json); // retorna any
 const cordenadasCorrigida: { x: number; y: number } = JSON.parse(json); // retorna type number
-console.log(cordenadasCorrigida);
+
+//2) quando declara a variavel em uma linha e chama depois
+
+let palavrasDeCores = ['red', 'green', 'blue'];
+let foundWord; // assim nao é a maneira certa, usar = false
+
+for (let i = 0; i < palavrasDeCores.length; i += 1) {
+  if (palavrasDeCores[i] === 'green') {
+    foundWord = true;
+  }
+}
+
+//3) quando a mesma variavel recebe 2 typos
+let numerosGeral = [1 - 3, -9];
+let numeroAbaixoDeZer: boolean | number = false;
+
+for (let i = 0; i < numerosGeral.length; i += 1) {
+  if (numerosGeral[i] > 0) {
+    numeroAbaixoDeZer = numerosGeral[i];
+  }
+}

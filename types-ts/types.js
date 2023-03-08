@@ -22,4 +22,19 @@ var exemploFunction = function (i) { };
 var json = '{"x": 10, "y": 2}';
 var cordenadas = JSON.parse(json); // retorna any
 var cordenadasCorrigida = JSON.parse(json); // retorna type number
-console.log(cordenadasCorrigida);
+//2) quando declara a variavel em uma linha e chama depois
+var palavrasDeCores = ['red', 'green', 'blue'];
+var foundWord; // assim nao é a maneira certa, usar = false
+for (var i = 0; i < palavrasDeCores.length; i += 1) {
+    if (palavrasDeCores[i] === 'green') {
+        foundWord = true;
+    }
+}
+//3) quando a mesma variavel recebe 2 typos
+var numerosGeral = [1 - 3, -9];
+var numeroAbaixoDeZer = false;
+for (var i = 0; i < numerosGeral.length; i += 1) {
+    if (numerosGeral[i] > 0) {
+        numeroAbaixoDeZer = numerosGeral[i];
+    }
+}
