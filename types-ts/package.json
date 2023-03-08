@@ -4,7 +4,7 @@
   "description": "",
   "main": "types.js",
   "scripts": {
-    "start": "nodemon array.js"
+    "start": "nodemon intefaces.js"
   },
   "keywords": [],
   "author": "",
