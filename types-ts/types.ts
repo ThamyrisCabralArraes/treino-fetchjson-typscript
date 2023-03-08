@@ -30,3 +30,10 @@ const point: {
 
 //function
 const exemploFunction: (i: number) => void = (i) => {};
+
+// quando voce usa annotacion
+//1) function que retornam type 'any'
+const json = '{"x": 10, "y": 2}';
+const cordenadas = JSON.parse(json); // retorna any
+const cordenadasCorrigida: { x: number; y: number } = JSON.parse(json); // retorna type number
+console.log(cordenadasCorrigida);

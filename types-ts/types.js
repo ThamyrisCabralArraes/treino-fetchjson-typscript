@@ -17,3 +17,9 @@ var point = {
 };
 //function
 var exemploFunction = function (i) { };
+// quando voce usa annotacion
+//1) function que retornam type 'any'
+var json = '{"x": 10, "y": 2}';
+var cordenadas = JSON.parse(json); // retorna any
+var cordenadasCorrigida = JSON.parse(json); // retorna type number
+console.log(cordenadasCorrigida);
